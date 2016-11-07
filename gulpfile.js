@@ -1,4 +1,4 @@
-var project = "clone";
+var project = "ceveal";
 
 var jsPath = "assets/scripts/";
 var theFiles = [
@@ -99,10 +99,10 @@ gulp.task("browser-sync", function () {
 
 });
 
-gulp.task("watch", ["clean:dist", "browser-sync"], function () {
-    gulp.watch("./assets/styles/**/*.scss", ["sass"]);
-    gulp.watch("./assets/scripts/*", ["js", "inline-js", browserSync.reload]);
-    gulp.watch("./**/*.php", browserSync.reload);
+gulp.task("watch", ["browser-sync"], function () {
+    gulp.watch("assets/styles/**/*.scss", ["sass"]);
+    gulp.watch("./assets/scripts/**/*.js", ["js"]);
+    gulp.watch("./**/*.php");
     gulp.watch("gulpfile.js").on("change", function () {
         process.exit(0)
     })
