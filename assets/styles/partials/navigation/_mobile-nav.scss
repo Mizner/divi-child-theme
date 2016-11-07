@@ -1,0 +1,85 @@
+$menuButtonHeight: 3em;
+
+#topMenuNav button#menuButton {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+
+
+#page-container {
+  margin-top: $menuButtonHeight !important;
+  @media screen and (min-width: $medium) {
+    margin-top: initial !important;
+  }
+}
+
+#topMenuNav button#menuButton {
+  font-family: $font-primary;
+  font-size: 1em;
+  padding: 0;
+  text-transform: uppercase;
+  width: 100%;
+  line-height: $menuButtonHeight;
+  background: $dark;
+  border: none;
+  color: $light;
+  box-shadow: 0 0 1em black;
+}
+
+#topMenuNav {
+  transition: 400ms ease all;
+  .primary-menu {
+    display: none;
+  }
+  li {
+    width: 100%;
+    a {
+      display: block;
+      width: 100%;
+      color: white;
+      border-bottom: 1px solid white;
+      line-height: $menuButtonHeight;
+      text-align: left;
+      padding-left: 2em;
+      background: $mobileNavBackground;
+      &:hover {
+        background: $mobileNavBackgroundFocus;
+      }
+    }
+  }
+  .sub-menu li a {
+    padding-left: 3em;
+  }
+}
+
+#topMenuNav.toggled {
+  button#menuButton {
+    box-shadow: none;
+  }
+  .primary-menu {
+    top: $menuButtonHeight;
+    display: block;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 782px) {
+  .admin-bar #topMenuNav button#menuButton {
+    top: 46px;
+  }
+
+  .admin-bar #topMenuNav #primaryMenu {
+    margin-top: 46px;
+  }
+
+  #wpadminbar {
+    position: fixed;
+  }
+}

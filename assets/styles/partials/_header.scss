@@ -1,0 +1,70 @@
+#page-container {
+  padding-top: 0 !important; // Compensating for custom header
+}
+
+header#mainHeader {
+  text-align: center;
+  background: $headerBackground;
+  color: $headerText;
+}
+
+header#mainHeader #theLogo {
+  a, img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media screen and (min-width: $medium) {
+  header#mainHeader {
+    text-align: initial;
+  }
+  #headContainer {
+    @include bleed($page-margin);
+    padding: 1em 0;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #headContainer > * {
+    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  #headerPrimary {
+    width: $LogoSize;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    > * {
+      flex: 1 100%;
+    }
+  }
+  #headerSecondary {
+    align-self: center;
+    width: $MenuSize;
+    text-align: right;
+  }
+  #headerSecondaryTop,
+  #headerSecondaryMiddle,
+  #headerSecondaryBottom {
+    width: 100%;
+    text-align: right;
+    > * {
+      display: inline-block;
+    }
+  }
+  #headerPrimary {
+    .phoneNumber {
+      padding-left: 1em;
+    }
+  }
+  #mainHeader a {
+    color: $menuTextColor !important;
+    &:hover, &:focus{
+      color: $menuTextHover !important;
+    }
+  }
+}

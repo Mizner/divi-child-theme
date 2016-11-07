@@ -1,0 +1,70 @@
+$dark: #333;
+$darkgray: #414042;
+$gray: #a7a9ac;
+$light: white;
+
+$page-margin: 10%;
+
+/* important: content should never be more than 55-ish characters per line, it just becomes unreadable */
+$contentWidth: 30.55555em;
+
+// Menu & Header helpers
+$headerNavZindex: 999;
+
+// important -  Responsible for cohesive input height & button height
+$fieldsHeight: 2.5em;
+
+$textShadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+$darkTransparentBackground: rgba(0, 0, 0, 0.72);
+
+$font-primary: inherit;
+$font-secondary: inherit;
+
+// Header
+$logoSize: 170px;
+$headerBackground: $light;
+$headerText: $gray;
+$LogoSize: 20%;
+$MenuSize: 80%;
+
+// Mobile Nav
+$mobileNavText: $light;
+$mobileNavBackground: $gray;
+$mobileNavBackgroundFocus: $darkgray;
+
+// Nav
+$currentMenuItem: $darkgray;
+$menuTextColor: $gray;
+$menuTextHover: $darkgray;
+$subMenuBackground: $dark;
+
+// Search Form
+$searchButton: $darkgray;
+
+// Social Icons
+$iconColor: $darkgray;
+$iconColorHover: $gray;
+
+// Buttons
+$buttonBackground: $gray;
+$buttonBorder: $gray;
+$buttonText: $light;
+// Buttons:hover
+$buttonBackgroundHover: $gray;
+$buttonBorderHover: $gray;
+$buttonTextHover: $light;
+
+
+// Footer
+$footerBackground: $darkgray;
+
+
+// Media Query Sizes
+$super: 1405px;
+$extra: 1100px;
+$large: 980px;
+$medium: 767px;
+$small: 479px;
+
+
+

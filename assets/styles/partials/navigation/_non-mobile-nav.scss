@@ -1,0 +1,101 @@
+@media only screen and (min-width: $medium) {
+  #mainHeader {
+    .site-menu > li {
+      display: inline-block;
+    }
+  }
+  .site-menu li a {
+    font-size: 1em;
+    line-height: 2em;
+    padding: initial;
+    padding-left: 1em !important;
+  }
+  .site-menu .sub-menu .sub-menu {
+    li a {
+      padding-left: 2em !important;
+    }
+  }
+  #topMenuNav {
+    #menuButton {
+      display: none;
+    }
+    .site-menu {
+      display: block;
+      > li {
+        position: relative;
+        > a {
+          background: initial;
+          border: none;
+          &:hover, &:focus {
+
+            &:after {
+
+            }
+          }
+        }
+      }
+      li {
+        width: initial;
+      }
+    }
+  }
+
+  .site-menu {
+    ul.sub-menu {
+      position: absolute;
+      width: 200px;
+      height: 0;
+      opacity: 0;
+      z-index: 999;
+      transition: 0s ease all;
+      transition-delay: 1s;
+      li {
+        display: block;
+        a {
+
+        }
+      }
+    }
+  }
+  .site-menu > li:hover,
+  .site-menu > li.focus {
+    ul.sub-menu {
+      transition: 0s ease all;
+      height: initial;
+      opacity: 1;
+      li {
+        width: 100%;
+      }
+      li a {
+        position: relative;
+      }
+    }
+  }
+  #topMenuNav {
+    > div > ul > li > a {
+      //border-right: 1px solid $light;
+      //&:after {
+      //  height: 1px;
+      //  background: $light;
+      //  content: " ";
+      //  display: block;
+      //  position: absolute;
+      //  left: 0;
+      //  right: 0;
+      //  bottom: -10px;
+      //  width: 0%;
+      //  transition: 400ms ease width;
+      //  margin-left: auto;
+      //  margin-right: auto;
+      //}
+    }
+  }
+}
+
+@media screen and (min-width: 782px) {
+  .admin-bar {
+    #mainHeader {
+      top: 32px;
+    }
+  }
+}

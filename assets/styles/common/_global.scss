@@ -1,0 +1,29 @@
+body {
+  font-size: 18px !important;
+}
+
+h1, h2, h3, h4 {
+  text-shadow: $textShadow;
+}
+
+.colorHeaders {
+  h1, h2, h3, h4, h5, h6 {
+    color: $darkGray !important;
+  }
+}
+
+#main-content {
+  background: transparent !important;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+input[type=text], input[type=password], input[type=tel], input[type=email], input.text, input.title, textarea, select {
+  line-height: $fieldsHeight;
+  padding-left: 1em;
+  border: 1px solid #bbb;
+  color: #4e4e4e;
+  background-color: #fff;
+}

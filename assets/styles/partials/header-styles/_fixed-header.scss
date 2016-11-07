@@ -1,0 +1,61 @@
+$headerTransition: 400ms;
+$fixedFontSize: 14px;
+$bodyTopPaddingFix: 100px;
+
+@media screen and (min-width: $medium) {
+  #page-container {
+    padding-top: $bodyTopPaddingFix !important; // Compensating for custom header
+  }
+  header#mainHeader {
+    z-index: 99 !important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 10px black;
+  }
+  // Logo Width
+  header#mainHeader {
+    #theLogo img {
+      transition: $headerTransition ease width;
+    }
+  }
+  .fixedHeader header#mainHeader {
+    #theLogo img {
+      width: 70%;
+    }
+  }
+
+  // Header Padding
+  #headContainer {
+    transition: $headerTransition ease padding;
+  }
+  .fixedHeader #headContainer {
+    padding: .5em 0;
+  }
+
+  // Menu Items - line height
+  header#mainHeader {
+    .site-menu > li > a,
+    .socialIcons a i:before,
+    input.search-field,
+    a.phoneNumber {
+      transition: $headerTransition ease all;
+    }
+  }
+
+  .fixedHeader header#mainHeader {
+    .site-menu > li > a,
+    .socialIcons a i:before,
+    input.search-field,
+    a.phoneNumber {
+      line-height: 1em !important;
+      font-size: $fixedFontSize !important;
+    }
+    .site-menu .sub-menu > li > a {
+      font-size: $fixedFontSize !important;
+    }
+  }
+  // Fix for when logged in
+
+}

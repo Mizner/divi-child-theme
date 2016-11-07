@@ -1,0 +1,49 @@
+.woocommerce a.button.alt,
+.woocommerce-page a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce-page button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce-page input.button.alt,
+.woocommerce #respond input#submit.alt,
+.woocommerce-page #respond input#submit.alt,
+.woocommerce #content input.button.alt,
+.woocommerce-page #content input.button.alt, .woocommerce a.button,
+.woocommerce-page a.button,
+.woocommerce button.button,
+.woocommerce-page button.button,
+.woocommerce input.button,
+.woocommerce-page input.button,
+.woocommerce #respond input#submit,
+.woocommerce-page #respond input#submit,
+.woocommerce #content input.button,
+.woocommerce-page #content input.button,
+.button,
+[type="submit"],
+[name="wp-submit"],
+.et_pb_button,
+a.et_pb_button {
+  color: $buttonText !important;
+  background: $buttonBackground !important;
+  border: 1px solid $buttonBorder !important;
+  border-radius: 0 !important;
+  padding: 0 1.25em;
+  line-height: $fieldsHeight !important;
+  font-size: 1em !important;
+  font-family: inherit !important;
+  &:after {
+    line-height: 1.4em !important;
+  }
+  &:hover, &:focus {
+    color: $buttonTextHover !important;
+    background: $buttonBackgroundHover !important;
+    border: 1px solid $buttonBorderHover !important;
+    padding: 0 2em 0 1.25em;
+  }
+}
+
+input[type="submit"] {
+  &:hover, &:focus {
+    padding: 0 1.25em 0 1.25em !important;
+  }
+}
+

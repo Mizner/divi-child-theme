@@ -1,0 +1,21 @@
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  > * {
+    display: inline-block;
+  }
+  li {
+    i {
+      color: $iconColor;
+      padding-right: .5em;
+      &:hover {
+        color: $iconColorHover;
+      }
+    }
+    &:last-of-type {
+      i {
+        padding-right: 0;
+      }
+    }
+  }
+}

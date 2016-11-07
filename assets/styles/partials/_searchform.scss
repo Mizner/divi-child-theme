@@ -1,0 +1,16 @@
+.search-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  input {
+    border: none;
+    font-size: 1em;
+    padding-left: 1em;
+  }
+  button {
+    border: none;
+    background: $searchButton;
+    color: $light;
+  }
+}
