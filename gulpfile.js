@@ -1,4 +1,4 @@
-var project = "ceveal";
+var project = "clone";
 
 var jsPath = "assets/scripts/";
 var theFiles = [
@@ -102,7 +102,8 @@ gulp.task("browser-sync", function () {
 gulp.task("watch", ["browser-sync"], function () {
     gulp.watch("assets/styles/**/*.scss", ["sass"]);
     gulp.watch("./assets/scripts/**/*.js", ["js"]);
-    gulp.watch("./**/*.php");
+    gulp.watch("./assets/scripts/**/*.js", browserSync.reload);
+    gulp.watch("**/*.php", browserSync.reload);
     gulp.watch("gulpfile.js").on("change", function () {
         process.exit(0)
     })
